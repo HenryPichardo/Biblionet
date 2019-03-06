@@ -1,0 +1,109 @@
+﻿@model IEnumerable<BiblionetModel.Models.Libro>
+@*@{
+    Layout = null;
+}*@
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>   
+   
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="border-success text-center" style="color:blue; vertical-align:central; font-family:'Book Antiqua'">CONSULTA DE INVENTARIO</h2>
+
+                <div class="row  bg-primary">
+                    <a class="btn btn-danger float-left btn-lg p-1 m-1" href="/Libro/Create" role="button">CREAR NUEVO</a>
+                    <a class="btn btn-success btn-lg p-1 m-1" href="/Asignatura/Index" role="button">ASIGNATURAS</a>
+                    <a class="btn btn-warning float-left btn-lg p-1 m-1" href="/Registro/Index" role="button">REGISTROS</a>
+                    <div class="col-12">
+                        <input class="form-control p-1 m-1" id="input_search" name="search" type="text" placeholder="Escriba su busqueda aqui...">
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-bordered ">
+                        <thead>
+                            <tr class="table-primary">
+                                <th style="text-align:center">
+                                    @Html.DisplayNameFor(model => model.Titulo)
+                                </th>
+                                <th style="text-align:center">
+                                    @Html.DisplayNameFor(model => model.Autor)
+                                </th>
+                                <th style="text-align:center">
+                                    @Html.DisplayNameFor(model => model.Edicion)
+                                </th>
+                                <th style="text-align:center">
+                                    @Html.DisplayNameFor(model => model.Editora)
+                                </th>
+                                <th style="text-align:center">
+                                    @Html.DisplayNameFor(model => model.Año)
+                                </th>
+
+                                @*<th style="text-align:center">
+                                        Acciones
+                                    </th>*@
+
+                            </tr>
+                        </thead>
+                        <tbody id="table_body">
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td style="text-align:center">
+                                        @Html.DisplayFor(modelItem => item.Titulo)
+                                    </td>
+                                    <td style="text-align:center">
+                                        @Html.DisplayFor(modelItem => item.Autor)
+                                    </td>
+                                    <td style="text-align:center">
+                                        @Html.DisplayFor(modelItem => item.Edicion)
+                                    </td>
+                                    <td style="text-align:center">
+                                        @Html.DisplayFor(modelItem => item.Editora)
+                                    </td>
+                                    <td style="text-align:center">
+                                        @Html.DisplayFor(modelItem => item.Año)
+                                    </td>
+                                    @*<td style="text-align:center">
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.LibroID }) |
+                                            @Html.ActionLink("Details", "Details", new { id = item.LibroID }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.LibroID })
+                                        </td>*@
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
+    <script>
+        $(document).ready(function () {
+            $("#input_search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#table_body tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+
+

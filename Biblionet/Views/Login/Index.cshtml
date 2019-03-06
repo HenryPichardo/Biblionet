@@ -1,0 +1,29 @@
+﻿
+@*@{
+    Layout = null;
+}*@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body >
+    <div class="Login-box" >
+        <h1 class="text-center">Login</h1>
+        <form action="/Login/Index" method="post">
+            <p>
+                <input type="text" class="form-control" name="usuario" placeholder="Usuario" value="" />
+            </p>
+            <p>
+                <input type="password" class="form-control" name="password" placeholder="Password" value="" />
+            </p>
+            <input type="submit" class="btn btn-primary btn-lg btn-block" name="name" value="ENTRAR" />
+        </form>
+    </div>
+</body>
+</html>

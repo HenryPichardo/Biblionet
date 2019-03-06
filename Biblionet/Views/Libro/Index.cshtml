@@ -1,0 +1,85 @@
+﻿@model IEnumerable<BiblionetModel.Models.Libro>
+
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="charset" content="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    
+    <div class="container" >
+        <div class="row">
+            <div class="col-12">
+
+                <h2 class="border-success text-center" style="color:blue; vertical-align:central; font-family:'Book Antiqua'">INVENTARIO</h2>
+                <div class="bg-primary">
+                    <a class="btn btn-danger float-left btn-lg p-1 m-1" href="/Libro/Create" role="button">CREAR NUEVO</a>
+                    <a class="btn btn-success btn-lg p-1 m-1" href="/Asignatura/Index" role="button">ASIGNATURAS</a>
+                    <a class="btn btn-warning float-left btn-lg p-1 m-1" href="/Registro/Index" role="button">REGISTROS</a>
+                </div>
+                <table class="table table-bordered ">
+                    <tr class="table-primary">
+                        <th style="text-align:center">
+                            @Html.DisplayNameFor(model => model.Titulo)
+                        </th>
+                        <th style="text-align:center">
+                            @Html.DisplayNameFor(model => model.Autor)
+                        </th>
+                        <th style="text-align:center">
+                            @Html.DisplayNameFor(model => model.Edicion)
+                        </th>
+                        <th style="text-align:center">
+                            @Html.DisplayNameFor(model => model.Editora)
+                        </th>
+                        <th style="text-align:center">
+                            @Html.DisplayNameFor(model => model.Año)
+                        </th>
+
+                        <th style="text-align:center">
+                            Acciones
+                        </th>
+
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="text-align:center">
+                                @Html.DisplayFor(modelItem => item.Titulo)
+                            </td>
+                            <td style="text-align:center">
+                                @Html.DisplayFor(modelItem => item.Autor)
+                            </td>
+                            <td style="text-align:center">
+                                @Html.DisplayFor(modelItem => item.Edicion)
+                            </td>
+                            <td style="text-align:center">
+                                @Html.DisplayFor(modelItem => item.Editora)
+                            </td>
+                            <td style="text-align:center">
+                                @Html.DisplayFor(modelItem => item.Año)
+                            </td>
+                            <td style="text-align:center">
+                                <a href="Edit" class="btn btn-warning" role="button">Editar</a> |
+                                <a href="Details" class="btn btn-success" role="button">Detalles</a> |
+                                <a href="Delete" class="btn btn-danger" role="button">Borrar</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

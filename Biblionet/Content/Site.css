@@ -1,0 +1,172 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    /*float: left;*/
+    /*padding: 15px;*/
+    /*border: 5px solid black;*/
+    /*height: 70px*/
+}
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.contenedor {
+    width: 100%;
+    /*margin: 60px auto;*/
+    /*border: 5px solid red;
+    padding: 5px;*/
+}
+
+.clearfix ::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header {
+    background-color: rgb(95, 87, 251);
+    width: 100%;
+    height: 50px;
+}
+
+footer {
+    clear: both;
+    
+    width: 100%;
+    /*height: 200px;
+    background-color: rgb(40, 84, 61);*/
+}
+
+nav {
+    /*height: 100%;*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 1px;
+    overflow: hidden;
+    height: 100%;
+}
+
+li {
+    float: right;
+    display: block;
+    margin: 0px 5px;
+    padding: 15px 0px;
+    height: 100%;
+    background-color: rgb(213, 156, 64);
+}
+
+section {
+    width: 100%;
+    height: 400px;
+}
+
+    section article {
+        width: 80%;
+        height: 400px;
+        background-color: rgb(150, 185, 203);
+        margin: 0 auto;
+    }
+
+body {
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+.Login-box {
+    background-color: lightblue;
+    width: 380px;
+    margin: 5% 40% 15% 40%;
+    /*border:2px solid black;*/
+    padding: 30px;
+    
+    
+    
+    border-radius: 10px;
+}
+
+.form-control {
+    background-color: blanchedalmond;
+}
+
+.body-login {
+    background-color: aquamarine;
+}
+
+.fondo-body {
+    background-image: url(../Images/images1.png);
+    background-repeat:repeat;
+    background-attachment:fixed;
+    background-position:center center;
+    background-size: contain;
+}
+
+

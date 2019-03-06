@@ -1,0 +1,12 @@
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\obj\Debug\BiblionetModel.csproj.CoreCompileInputs.cache
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\BiblionetModel.dll.config
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\BiblionetModel.dll
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\BiblionetModel.pdb
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\EntityFramework.dll
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\EntityFramework.xml
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\obj\Debug\BiblionetModel.csproj.CopyComplete
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\obj\Debug\BiblionetModel.dll
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\obj\Debug\BiblionetModel.pdb
+C:\Users\Henry Pichardo\source\repos\Biblionet\BiblionetModel\obj\Debug\BiblionetModel.csprojAssemblyReference.cache

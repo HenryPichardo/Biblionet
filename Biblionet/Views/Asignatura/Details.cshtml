@@ -1,0 +1,26 @@
+﻿@model BiblionetModel.Models.Asignatura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Asignatura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AsignaturaNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AsignaturaNombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AsignaturaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
